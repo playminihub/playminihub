@@ -1,111 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PlayMiniHub - Free HTML5 Games</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Talha - Candy Crush</title>
 
-  <style>
-    body{
-      margin:0;
-      font-family:Arial;
-      background:#0f172a;
-      color:white;
-      text-align:center;
-    }
+    <!-- 👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻-->
+    <!-- Also uploaded the demo of this code in a gif : https://c.tenor.com/x8v1oNUOmg4AAAAd/tenor.gif-->
+    <!-- 👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻-->
 
-    header{
-      padding:30px;
-      background:#111827;
-      font-size:32px;
-      font-weight:bold;
-    }
+    <!-- 👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻👇🏻-->
+    <!-- More html-css-js Games Calculators Games Cards Elements Projects on https://www.github.com/he-is-talha --> 
+    <!-- 👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻👆🏻-->
 
-    .hero{
-      padding:60px 20px;
-    }
+    <link rel="icon" href="https://i.ibb.co/M6KTWnf/pic.jpg">
 
-    .hero h1{
-      font-size:48px;
-      margin-bottom:20px;
-    }
-
-    .hero p{
-      font-size:20px;
-      color:#cbd5e1;
-    }
-
-    .games{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-      padding:40px;
-    }
-
-    .card{
-      background:#1e293b;
-      border-radius:12px;
-      padding:20px;
-    }
-
-    .card h3{
-      margin-top:0;
-    }
-
-    button{
-      background:#3b82f6;
-      color:white;
-      border:none;
-      padding:12px 20px;
-      border-radius:8px;
-      cursor:pointer;
-    }
-
-    footer{
-      padding:30px;
-      background:#111827;
-      margin-top:40px;
-      color:#94a3b8;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  PlayMiniHub
-</header>
-
-<section class="hero">
-  <h1>Free Online HTML5 Games</h1>
-  <p>Play fun games directly in your browser on mobile and desktop.</p>
-</section>
-
-<section class="games">
-
-  <div class="card">
-    <h3>Car Racing</h3>
-    <p>Drive fast and avoid obstacles.</p>
-    <button>Play Now</button>
-  </div>
-
-  <div class="card">
-    <h3>Space Shooter</h3>
-    <p>Destroy enemy ships and survive.</p>
-    <button>Play Now</button>
-  </div>
-
-  <div class="card">
-    <h3>Puzzle Match</h3>
-    <p>Match blocks and earn points.</p>
-    <button>Play Now</button>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 PlayMiniHub - All Rights Reserved
-</footer>
-
-</body>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Mode Selection Screen -->
+    <div id="modeSelection">
+      <h2>Choose Game Mode</h2>
+      <button id="endlessMode">Endless Mode</button>
+      <button id="timedMode">Timed Mode</button>
+    </div>
+    <!-- Scoreboard with Timer and Change Mode Button -->
+    <div class="scoreBoard">
+      <h3>score</h3>
+      <h1 id="score">0</h1>
+      <div id="timer"></div>
+      <button id="changeMode">Change Mode</button>
+    </div>
+    <!-- Game Grid -->
+    <div class="grid"></div>
+  </body>
 </html>
